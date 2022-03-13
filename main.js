@@ -1,7 +1,7 @@
 #!/usr/bin/env node
 const opn = require('opn');
 let inputArr = process.argv.slice(2);
-console.log(inputArr);
+// console.log(inputArr);
 
 let mainLink = "https://www.youtube.com/results?search_query=";
 
@@ -15,6 +15,8 @@ for (let i = 0; i < nSize; i++) {
         join = join + "+" + element;
     }
 }
+
+console.log("Your Query : ", join," is Processing🤩");
 
 mainLink = mainLink + join;
 searchInYoutube(mainLink);
